@@ -1,0 +1,32 @@
+{
+  "name": "internship",
+  "version": "1.0.0",
+  "description": "Boilerplate for React and JS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client"
+  },
+  "author": "Sagar Biswas",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "concurrently": "^4.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-ip": "^1.0.3",
+    "face-api.js": "^0.21.0",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router": "^5.1.2",
+    "reactstrap": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

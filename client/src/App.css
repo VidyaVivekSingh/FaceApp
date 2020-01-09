@@ -1,0 +1,548 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add a black background color to the top navigation */
+
+.Navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+
+.Navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+
+.Navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+
+.Navbar a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Simple CSS Spinner for Loading */
+
+.loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(190, 128, 181, 0.5);
+  border-radius: 50%;
+  border-top-color: #be80b5;
+  animation: spin 0.5s ease-in-out infinite;
+  -webkit-animation: spin 0.5s ease-in-out infinite;
+}
+
+/* border-bottom: 2px solid #b5bbc6;
+  border-bottom-width: 1px; */
+
+.listItem {
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0px solid rgba(175, 169, 169, 0.125);
+  width: 100%;
+  border-radius: .25rem;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+*[_ngcontent-grr-c0] {
+  font-family: exo;
+  font-size: 20px
+}
+
+ul[_ngcontent-grr-c0] li[_ngcontent-grr-c0] a[_ngcontent-grr-c0] {
+  font-size: 1.5rem
+}
+
+.navbar[_ngcontent-grr-c0] {
+  background: linear-gradient(to left, #414960 41%, rgba(65, 73, 96, .63) 74%, #fff 88%);
+  padding-left: 15px !important;
+  padding-right: 15px !important
+}
+
+.card[_ngcontent-grr-c1] {
+  margin: auto auto 3rem;
+  height: 400px;
+  font-weight: 400;
+  background-image: url(/assets/images/LandingPage10.jpg);
+  background-size: 100% 100%;
+  opacity: .9;
+  box-shadow: 0 1px 20px 0 rgba(40, 37, 89, .6);
+  display: flex
+}
+
+.logo-text[_ngcontent-grr-c1] {
+  color: #fff;
+  font-family: exo;
+  font-weight: 700;
+  margin: auto
+}
+
+.tag-line[_ngcontent-grr-c1] {
+  display: block;
+  font-family: exo;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 1rem
+}
+
+#blinking[_ngcontent-grr-c1] {
+  -webkit-animation: 1.5s infinite blinkingText;
+  animation: 1.5s infinite blinkingText
+}
+
+@-webkit-keyframes blinkingText {
+  0%, 100% {
+    color: #23669a
+  }
+  49%, 50%, 99% {
+    color: transparent
+  }
+}
+
+@keyframes blinkingText {
+  0%, 100% {
+    color: #23669a
+  }
+  49%, 50%, 99% {
+    color: transparent
+  }
+}
+
+.cb[_ngcontent-grr-c1] {
+  margin-top: -7rem
+}
+
+.component-badge[_ngcontent-grr-c1] {
+  height: 12rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 2.5rem
+}
+
+.component-badge[_ngcontent-grr-c1]>h1[_ngcontent-grr-c1] {
+  font-family: exo;
+  color: #fff
+}
+
+.float-right[_ngcontent-grr-c1] {
+  float: right !important
+}
+
+.component-badge-count[_ngcontent-grr-c1] {
+  font-family: exo;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 3rem;
+  font-size: 40px
+}
+
+.bg-gradient-danger[_ngcontent-grr-c1] {
+  background: linear-gradient(to right, #ffbf96, #fe7096)
+}
+
+.bg-gradient-info[_ngcontent-grr-c1] {
+  background: linear-gradient(to right, #90caf9, #047edf 99%)
+}
+
+.bg-gradient-success[_ngcontent-grr-c1] {
+  background: linear-gradient(to right, #84d9d2, #07cdae)
+}
+
+.card-img-absolute[_ngcontent-grr-c1] {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  height: 100%
+}
+
+.badge-content[_ngcontent-grr-c1]:hover {
+  box-shadow: 0 16px 40px 0 rgba(182, 205, 239, .97);
+  transform: translateY(-1rem)
+}
+
+.badge-content[_ngcontent-grr-c1]:hover .fa[_ngcontent-grr-c1], .typing[_ngcontent-grr-c1] {
+  color: #06ef85
+}
+
+.icon-color[_ngcontent-grr-c1] {
+  color: #23669a
+}
+
+#version[_ngcontent-grr-c1] {
+  font-size: 12px
+}
+
+.align-center[_ngcontent-grr-c1]>h3[_ngcontent-grr-c1] {
+  font-family: exo;
+  color: #23669a;
+  font-weight: 600
+}
+
+.inclusive-icon[_ngcontent-grr-c1]>i[_ngcontent-grr-c1] {
+  color: #23669a
+}
+
+.inclusive-icon[_ngcontent-grr-c1]::after, .inclusive-icon[_ngcontent-grr-c1]::before {
+  display: inline-block;
+  margin-top: -4px;
+  vertical-align: middle;
+  content: "";
+  background-color: #23669a;
+  width: 48px;
+  height: 1px
+}
+
+.serviceBox[_ngcontent-grr-c1] {
+  font-family: exo;
+  text-align: center;
+  padding: 20px 15px 60px;
+  color: #23669a
+}
+
+.serviceBox[_ngcontent-grr-c1] .service-icon[_ngcontent-grr-c1] {
+  color: #23669a;
+  background-color: #fff;
+  font-size: 50px;
+  line-height: 100px;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto 40px;
+  border-radius: 50%;
+  border: 2px solid #23669a;
+  display: block;
+  transition: all .3s
+}
+
+.serviceBox[_ngcontent-grr-c1]:hover .service-icon[_ngcontent-grr-c1] {
+  border-color: transparent;
+  box-shadow: 0 0 10px #fff, 0 -10px 0 10px #23669a
+}
+
+.serviceBox[_ngcontent-grr-c1] .title[_ngcontent-grr-c1] {
+  color: #23669a;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  transition: all .3s
+}
+
+.serviceBox[_ngcontent-grr-c1]:hover .service-icon[_ngcontent-grr-c1], .serviceBox[_ngcontent-grr-c1]:hover .title[_ngcontent-grr-c1] {
+  color: #23669a
+}
+
+.serviceBox[_ngcontent-grr-c1] .description[_ngcontent-grr-c1] {
+  font-size: 15px;
+  text-align: center;
+  line-height: 27px;
+  margin-bottom: 20px
+}
+
+.serviceBox[_ngcontent-grr-c1] .read-more[_ngcontent-grr-c1] {
+  color: #fff;
+  background: #23669a;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: -56px;
+  padding: 5px;
+  display: block;
+  transform: rotateX(-90deg);
+  transform-origin: top center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+  transition: all .5s
+}
+
+.serviceBox[_ngcontent-grr-c1]:hover .read-more[_ngcontent-grr-c1] {
+  box-shadow: 0 0 10px #fff inset;
+  transform: rotateX(0)
+}
+
+.serviceBox[_ngcontent-grr-c1] .read-more[_ngcontent-grr-c1]:hover {
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px #000;
+  text-decoration: none
+}
+
+.serviceBox.blue[_ngcontent-grr-c1] .service-icon[_ngcontent-grr-c1] {
+  color: #34c3eb;
+  border-color: #34c3eb
+}
+
+.serviceBox.blue[_ngcontent-grr-c1]:hover .service-icon[_ngcontent-grr-c1] {
+  border-color: transparent;
+  box-shadow: 0 0 10px #fff, 0 -10px 0 10px #34c3eb
+}
+
+.serviceBox.blue[_ngcontent-grr-c1]:hover .title[_ngcontent-grr-c1] {
+  color: #34c3eb
+}
+
+.serviceBox.blue[_ngcontent-grr-c1] .read-more[_ngcontent-grr-c1] {
+  background: #34c3eb
+}
+
+.serviceBox.orange[_ngcontent-grr-c1] .service-icon[_ngcontent-grr-c1] {
+  color: #ff8214;
+  border-color: #ff8214
+}
+
+.serviceBox.orange[_ngcontent-grr-c1]:hover .service-icon[_ngcontent-grr-c1] {
+  border-color: transparent;
+  box-shadow: 0 0 10px #fff, 0 -10px 0 10px #ff8214
+}
+
+.serviceBox.orange[_ngcontent-grr-c1]:hover .title[_ngcontent-grr-c1] {
+  color: #ff8214
+}
+
+.serviceBox.orange[_ngcontent-grr-c1] .read-more[_ngcontent-grr-c1] {
+  background: #ff8214
+}
+
+.serviceBox.green[_ngcontent-grr-c1] .service-icon[_ngcontent-grr-c1] {
+  color: #8fb900;
+  border-color: #8fb900
+}
+
+.serviceBox.green[_ngcontent-grr-c1]:hover .service-icon[_ngcontent-grr-c1] {
+  border-color: transparent;
+  box-shadow: 0 0 10px #fff, 0 -10px 0 10px #8fb900
+}
+
+.serviceBox.green[_ngcontent-grr-c1]:hover .title[_ngcontent-grr-c1] {
+  color: #8fb900
+}
+
+.serviceBox.green[_ngcontent-grr-c1] .read-more[_ngcontent-grr-c1] {
+  background: #8fb900
+}
+
+@media only screen and (max-width:990px) {
+  .serviceBox[_ngcontent-grr-c1] {
+    margin: 0 0 50px
+  }
+}
+
+.demo[_ngcontent-grr-c1] {
+  background: #e5e5e5
+}
+
+.our-team[_ngcontent-grr-c1] {
+  border: 2px solid #23669a;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  z-index: 1;
+  position: relative;
+  font-family: exo
+}
+
+.our-team[_ngcontent-grr-c1]:after, .our-team[_ngcontent-grr-c1]:before {
+  content: "";
+  width: 100%;
+  height: 104%;
+  background: #23669a;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transform: translateY(-50%) scaleX(.3);
+  transition: all .3s ease 0s
+}
+
+.our-team[_ngcontent-grr-c1]:after {
+  width: 106%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(.25)
+}
+
+.our-team[_ngcontent-grr-c1]:hover:before {
+  transform: translateY(-50%) scaleX(.7)
+}
+
+.our-team[_ngcontent-grr-c1]:hover:after {
+  transform: translate(-50%, -50%) scaleY(.7)
+}
+
+.our-team[_ngcontent-grr-c1] img[_ngcontent-grr-c1] {
+  width: 100%;
+  min-height: 40rem;
+  max-height: 40rem;
+  border-radius: 10px;
+  transition: all .3s ease 0s
+}
+
+.our-team[_ngcontent-grr-c1] .team-content[_ngcontent-grr-c1] {
+  width: 93%;
+  padding: 25px 0 10px;
+  background: #23669a;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 15%, 15% 15%, 15% 0, 85% 0, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0 85%);
+  clip-path: polygon(0 15%, 15% 15%, 15% 0, 85% 0, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0 85%);
+  transform: translateX(-50%);
+  transition: all .3s cubic-bezier(.5, .2, .1, .9)
+}
+
+.our-team[_ngcontent-grr-c1]:hover .team-content[_ngcontent-grr-c1] {
+  bottom: 10px;
+  opacity: 1
+}
+
+.our-team[_ngcontent-grr-c1] .title[_ngcontent-grr-c1] {
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0
+}
+
+.our-team[_ngcontent-grr-c1] .post[_ngcontent-grr-c1] {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px
+}
+
+.our-team[_ngcontent-grr-c1] .social[_ngcontent-grr-c1] {
+  padding: 0;
+  margin: 0;
+  list-style: none
+}
+
+.our-team[_ngcontent-grr-c1] .social[_ngcontent-grr-c1] li[_ngcontent-grr-c1] {
+  display: inline-block;
+  margin: 0 5px
+}
+
+.our-team[_ngcontent-grr-c1] .social[_ngcontent-grr-c1] li[_ngcontent-grr-c1] a[_ngcontent-grr-c1] {
+  display: block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 20px;
+  color: #23669a;
+  transition: all .3s ease 0s
+}
+
+.our-team[_ngcontent-grr-c1] .social[_ngcontent-grr-c1] li[_ngcontent-grr-c1] a[_ngcontent-grr-c1]:hover {
+  background: linear-gradient(to bottom, #23669a, #053357);
+  box-shadow: 0 0 0 5px #23669a;
+  color: #fff
+}
+
+@media only screen and (max-width:990px) {
+  .our-team[_ngcontent-grr-c1] {
+    margin-bottom: 30px
+  }
+}
+
+.align-center[_ngcontent-grr-c1] {
+  text-align: center !important
+}
+
+.inclusive-icon[_ngcontent-grr-c1] {
+  margin-top: -1rem
+}
+
+.dashboard-badges[_ngcontent-grr-c1] {
+  padding: 2rem
+}
+
+.badge-content[_ngcontent-grr-c1] {
+  padding: 2rem;
+  height: 10rem;
+  box-shadow: 0 6px 34px 0 rgba(197, 220, 255, .6);
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform .25s ease
+}
+
+.badge-logo[_ngcontent-grr-c1] {
+  text-align: center
+}
+
+.badge-header[_ngcontent-grr-c1] {
+  padding: 1rem;
+  font-family: exo;
+  text-align: center;
+  font-size: x-large;
+  color: #23669a
+}
+
+.badge-desc[_ngcontent-grr-c1] {
+  font-family: exo;
+  text-align: center;
+  color: #23669a;
+  padding: 0 3rem;
+  font-size: smaller
+}
